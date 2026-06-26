@@ -37,7 +37,6 @@
             line-height: 1.6;
         }
 
-        /* ── Scroll progress ── */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -49,7 +48,6 @@
             transition: width 0.1s linear;
         }
 
-        /* ── Navbar ── */
         .navbar {
             background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(10px);
@@ -100,7 +98,6 @@
             border-radius: 50%;
         }
 
-        /* CV button */
         .btn-cv {
             background: transparent;
             border: 1.5px solid var(--primary-color);
@@ -125,7 +122,6 @@
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
         }
 
-        /* Mobile nav toggle */
         .mobile-nav-toggle {
             display: none;
             background: none;
@@ -135,7 +131,6 @@
             cursor: pointer;
         }
 
-        /* ── Hero ── */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -157,7 +152,6 @@
             z-index: 2;
         }
 
-        /* Two-column grid */
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -165,7 +159,6 @@
             align-items: center;
         }
 
-        /* Left text col */
         .hero-text-col {
             text-align: left;
         }
@@ -299,7 +292,6 @@
             color: white;
         }
 
-        /* Right image col */
         .hero-image-col {
             display: flex;
             justify-content: center;
@@ -344,7 +336,6 @@
             display: block;
         }
 
-        /* ── Sections ── */
         .section {
             padding: 5rem 0;
         }
@@ -368,7 +359,6 @@
             margin: 0 auto;
         }
 
-        /* About */
         .about-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
@@ -415,7 +405,6 @@
             font-size: 0.85rem;
         }
 
-        /* Icon grid */
         .skill-icons {
             display: flex;
             flex-wrap: wrap;
@@ -449,7 +438,6 @@
             font-weight: 500;
         }
 
-        /* Soft skills stay as pills */
         .skill-pills {
             display: flex;
             flex-wrap: wrap;
@@ -476,7 +464,6 @@
             transform: translateY(-2px);
         }
 
-        /* Timeline */
         .timeline {
             position: relative;
             padding-left: 2rem;
@@ -514,7 +501,6 @@
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
         }
 
-        /* Experience */
         .experience-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
@@ -576,7 +562,6 @@
             left: 0;
         }
 
-        /* ── Projects (alternating side-by-side rows) ── */
         .projects-rows {
             display: flex;
             flex-direction: column;
@@ -590,7 +575,6 @@
             align-items: center;
         }
 
-        /* Alternate sides: odd rows = image left, even rows = image right */
         .project-row:nth-child(even) .project-media {
             order: 2;
         }
@@ -764,7 +748,6 @@
             color: var(--secondary-color);
         }
 
-        /* Education */
         .education-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
@@ -808,7 +791,91 @@
             margin-top: 0.75rem;
         }
 
-        /* Languages */
+        /* Certifications */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .cert-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
+        }
+
+        .cert-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.25rem;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .cert-issuer {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .cert-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-tag {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .cert-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .cert-date {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            background: rgba(99, 102, 241, 0.12);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+        }
+
         .languages-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -843,7 +910,69 @@
             font-weight: 500;
         }
 
-        /* Contact */
+        /* Contact (side-by-side layout) */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 2.5rem;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1rem 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-item:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateX(4px);
+        }
+
+        .contact-info-icon {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-info-text h4 {
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-info-text p,
+        .contact-info-text a {
+            color: #94a3b8;
+            font-size: 0.88rem;
+            text-decoration: none;
+        }
+
+        .contact-info-text a:hover {
+            color: var(--primary-color);
+        }
+
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -878,12 +1007,10 @@
 
         .contact-form {
             background: rgba(255, 255, 255, 0.05);
-            padding: 3rem;
+            padding: 4.5rem;
             border-radius: 20px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .form-group {
@@ -933,7 +1060,6 @@
             color: white;
         }
 
-        /* Footer */
         footer {
             background: rgba(15, 23, 42, 0.95);
             padding: 2rem 0;
@@ -946,7 +1072,6 @@
             margin: 0;
         }
 
-        /* Scroll to top */
         .scroll-top {
             position: fixed;
             bottom: 2rem;
@@ -976,7 +1101,6 @@
             color: white;
         }
 
-        /* ── Animations ── */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -993,7 +1117,6 @@
             animation: fadeInUp 0.6s ease-out;
         }
 
-        /* ── Responsive ── */
         @media (max-width: 992px) {
             .hero-grid {
                 grid-template-columns: 1fr;
@@ -1045,6 +1168,10 @@
             .project-media-placeholder {
                 height: 240px;
             }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1093,10 +1220,8 @@
 
 <body>
 
-    <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Mercy Ayuru</a>
@@ -1108,6 +1233,7 @@
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#experience">Experience</a>
                 <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
                 <a class="nav-link" href="#education">Education</a>
                 <a class="nav-link" href="#contact">Contact</a>
                 <a class="btn-cv"
@@ -1119,12 +1245,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-grid">
 
-                <!-- Left: Text -->
                 <div class="hero-text-col">
                     <div class="status-badge">
                         <span class="status-dot"></span>
@@ -1153,7 +1277,6 @@
                     </div>
                 </div>
 
-                <!-- Right: Image -->
                 <div class="hero-image-col">
                     <div class="hero-image-wrap">
                         <img src="images/profile.jpeg" alt="Mercy Ayuru" class="hero-image">
@@ -1164,7 +1287,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-title">
@@ -1256,7 +1378,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <div class="section-title">
@@ -1293,7 +1414,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <div class="section-title">
@@ -1302,7 +1422,6 @@
             </div>
             <div class="projects-rows">
 
-                <!-- E-Commerce -->
                 <div class="project-row">
                     <div class="project-media">
                         <img src="images/Eki.png" alt="Eki E-Commerce Marketplace">
@@ -1344,7 +1463,6 @@
                     </div>
                 </div>
 
-                <!-- Wood & Furniture -->
                 <div class="project-row">
                     <div class="project-media">
                         <img src="images/mayondo.png" alt="Wood & Furniture Management System">
@@ -1382,7 +1500,6 @@
                     </div>
                 </div>
 
-                <!-- Portfolio -->
                 <div class="project-row">
                     <div class="project-media-placeholder">
                         <i class="bi bi-person-workspace"></i>
@@ -1425,56 +1542,71 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <!-- <section id="education" class="section">
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Education</h2>
-                <p>My academic background</p>
+                <h2>Certifications</h2>
+                <p>Training and achievements that back up my skills</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-degree">Certificate in Software Engineering</div>
-                                <div class="education-school">Refactory Academy</div>
-                                <p class="education-note">Full-stack web development, mobile application development,
-                                    database management, API development, version control, and collaborative software
-                                    engineering practices.</p>
-                            </div>
-                            <span class="education-period">Oct 2025 – May 2026</span>
-                        </div>
+            <div class="certifications-grid">
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <h3 class="cert-title">Apprenticeship Program</h3>
+                    <div class="cert-issuer">Refactory Academy</div>
+                    <div class="cert-tags">
+                        <span class="cert-tag">150hrs Training</span>
+                        <span class="cert-tag">680hrs Project Dev</span>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-date">Oct 2025</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-degree">Uganda Advanced Certificate of Education (UACE)</div>
-                                <div class="education-school">St Mary Magdalene Girls Secondary School</div>
-                            </div>
-                            <span class="education-period">Jan 2023 – Nov 2024</span>
-                        </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h3 class="cert-title">Certificate in Software Engineering</h3>
+                    <div class="cert-issuer">Refactory Academy</div>
+                    <div class="cert-tags">
+                        <span class="cert-tag">240hrs Training</span>
+                        <span class="cert-tag">Django</span>
+                        <span class="cert-tag">Agile</span>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-date">Jul 2025</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-degree">Uganda Certificate of Education (UCE)</div>
-                                <div class="education-school">St Mary Magdalene Girls Secondary School</div>
-                            </div>
-                            <span class="education-period">Jan 2019 – Oct 2022</span>
-                        </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="bi bi-cloud-fill"></i></div>
+                    <h3 class="cert-title">Introduction to Microsoft Azure: Describe Cloud Concepts</h3>
+                    <div class="cert-issuer">Microsoft Learn</div>
+                    <div class="cert-tags">
+                        <span class="cert-tag">Cloud Computing</span>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-date">Sep 2025</span>
                     </div>
                 </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="bi bi-people-fill"></i></div>
+                    <h3 class="cert-title">Soft Skills Training</h3>
+                    <div class="cert-issuer">BrighterMonday Uganda</div>
+                    <div class="cert-tags">
+                        <span class="cert-tag">Communication</span>
+                        <span class="cert-tag">Problem Solving</span>
+                        <span class="cert-tag">EQ</span>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-date">Sep 2025</span>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Languages Section -->
     <section id="languages" class="section">
@@ -1496,77 +1628,85 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <div class="section-title">
                 <h2>Contact Me</h2>
                 <p>Let's connect and discuss opportunities</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <i class="bi bi-envelope contact-icon"></i>
-                    <h4>Email</h4>
-                    <p>mercyniblett11@gmail.com</p>
+            <div class="contact-layout">
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <a href="mailto:mercyniblett11@gmail.com">mercyniblett11@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Phone</h4>
+                            <p>+256 773 576 608<br>+256 789 306 294</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Location</h4>
+                            <p>Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="bi bi-github"></i></div>
+                        <div class="contact-info-text">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Mercy294" target="_blank">github.com/Mercy294</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="bi bi-linkedin"></i></div>
+                        <div class="contact-info-text">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/mercy-ayuru-56b06b374/" target="_blank">mercy-ayuru</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="bi bi-telephone contact-icon"></i>
-                    <h4>Phone</h4>
-                    <p>+256 773 576 608<br>+256 789 306 294</p>
-                </div>
-                <div class="contact-item">
-                    <i class="bi bi-geo-alt contact-icon"></i>
-                    <h4>Location</h4>
-                    <p>Kampala, Uganda</p>
-                </div>
-                <div class="contact-item">
-                    <i class="bi bi-github contact-icon"></i>
-                    <h4>GitHub</h4>
-                    <p><a href="https://github.com/Mercy294" target="_blank"
-                            class="project-link">github.com/Mercy294</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="bi bi-linkedin contact-icon"></i>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://linkedin.com/in/mercy-ayuru-56b06b374/" target="_blank"
-                            class="project-link">mercy-ayuru</a></p>
-                </div>
+
+                <form action="https://formspree.io/f/xjkpgyov" method="POST" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"
+                            placeholder="What would you like to discuss?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
             </div>
-            <form action="https://formspree.io/f/xjkpgyov" method="POST" class="contact-form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
-                                required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="your@email.com" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"
-                        placeholder="What would you like to discuss?" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; <span id="footer-year"></span> Mercy Ayuru. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scroll to Top -->
     <a href="#" class="scroll-top"><i class="bi bi-arrow-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1582,10 +1722,8 @@
             const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
             const sections = document.querySelectorAll('section[id]');
 
-            // Mobile toggle
             mobileNavToggle.addEventListener('click', () => navbarNav.classList.toggle('show'));
 
-            // Smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -1598,21 +1736,16 @@
                 });
             });
 
-            // Scroll events
             window.addEventListener('scroll', () => {
                 const scrollTop = window.pageYOffset;
                 const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-                // Progress bar
                 progressBar.style.width = (scrollTop / docHeight * 100) + '%';
 
-                // Scroll-to-top
                 scrollTopBtn.classList.toggle('show', scrollTop > 300);
 
-                // Shrink navbar
                 navbar.classList.toggle('scrolled', scrollTop > 50);
 
-                // Active nav link
                 let current = '';
                 sections.forEach(s => {
                     if (scrollTop >= s.offsetTop - navbar.offsetHeight - 20) current = s.id;
@@ -1628,7 +1761,6 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // Typing animation
             const roles = ['Full Stack Developer', 'Backend Developer', 'Problem Solver', 'Python & Django Dev', 'React Native Builder'];
             let roleIndex = 0, charIndex = 0, isDeleting = false;
             const typedEl = document.querySelector('.typed-text');
@@ -1648,7 +1780,6 @@
 
             document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-            // Fade-in on scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('fade-in-up'); });
             }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
